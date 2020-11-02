@@ -1,87 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
 
-  Dark Mode
+    <link rel="stylesheet" href="style.css" />
 
-  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="nav-bar" class="header-nav">
+      <div class="left-nav">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <hr class="view">
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="right-nav">
+        <p>Dark Mode</p>
+        <div class="dark-mode-selector">
+          <div class="toggler" id="toggler"></div>
+        </div>
+      </div>
+    </header>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <main id="main-section">
+      <section id="profile-section">
+        <div id="facebook-profile-card" class="profile-card">
+          <p class="username">
+            <i class="fab fa-facebook-square icon icon-facebook"></i>@nathanf
+          </p>
+          <p class="followers"><span>1987</span>Followers</p>
+          <p class="today-details increase">
+            <i class="fas fa-sort-up icon"></i>12 Today
+          </p>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div id="twitter-profile-card" class="profile-card">
+          <p class="username"><i class="fab fa-twitter icon icon-twitter"></i>@nathanf</p>
+          <p class="followers"><span>1044</span>Followers</p>
+          <p class="today-details increase">
+            <i class="fas fa-sort-up icon"></i>99 Today
+          </p>
+        </div>
 
+        <div id="instagram-profile-card" class="profile-card">
+          <p class="username">
+            <i class="fab fa-instagram icon icon-instagram"></i>@realnathanf
+          </p>
+          <p class="followers"><span>11k</span>Followers</p>
+          <p class="today-details increase">
+            <i class="fas fa-sort-up icon"></i>1099 Today
+          </p>
+        </div>
 
+        <div id="youtube-profile-card" class="profile-card">
+          <p class="username"><i class="fab fa-youtube icon icon-youtube"></i>Nathan F.</p>
+          <p class="followers"><span>8239</span>Subscribers</p>
+          <p class="today-details decrease">
+            <i class="fas fa-sort-down icon"></i>144 Today
+          </p>
+        </div>
+      </section>
 
-  Overview - Today
+      <h2 id="section-heading">Overview - Today</h2>
 
-  Page Views
-  87
-  3%
+      <section id="overview-section">
 
-  Likes
-  52
-  2%
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Page Views</p>
+            <i class="fab fa-facebook-square icon-facebook"></i>
+          </div>
+          <div class="view-data">
+            <p class="count">87</p>
+            <span class="increase"><i class="fas fa-sort-up icon"></i>3%</span>
+          </div>
+        </div>
+        
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Likes</p>
+            <i class="fab fa-facebook-square icon-facebook"></i>
+          </div>
+          <div class="view-data">
+            <p class="count">87</p>
+            <span class="decrease"><i class="fas fa-sort-down icon"></i>2%</span>
+          </div>
+        </div>
 
-  Likes
-  5462
-  2257%
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Likes</p>
+            <i class="fab fa-instagram icon-instagram icon-twitter"></i></div>
+          
+          <div class="view-data">
+            <p class="count">5462</p>
+            
+            <span class="increase"><i class="fas fa-sort-up icon"></i>2257%</span>
+          </div>
+        </div>
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Profile Views</p>
+            <i class="fab fa-instagram icon-instagram icon-twitter"></i>
+          </div>
+          <div class="view-data">
+            <p class="count">52k</p>
+            <span class="increase"><i class="fas fa-sort-up icon"></i>1375%</span>
+          </div>
+        </div>
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter"><p>Retweets</p>
+          <i class="fab fa-twitter icon-twitter"></i></div>
+          <div class="view-data">
+            <p class="count">117</p>
+            <span class="increase"><i class="fas fa-sort-up icon"></i>303%</span>
+          </div>
+        </div>
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter"><p>Likes</p>
+          <i class="fab fa-twitter icon-twitter"></i></div>
+          <div class="view-data">
+            <p class="count">507</p>
+            <span class="increase"><i class="fas fa-sort-up icon"></i>553%</span>
+          </div>
+        </div>
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Likes</p>
+            <i class="fab fa-youtube icon-youtube"></i>
+          </div>
+          <div class="view-data">
+            <p class="count">107</p>
+            
+            <span class="decrease"><i class="fas fa-sort-down icon"></i>19%</span>
+          </div>
+        </div>
+        <div id="profile-overview" class="overview-card">
+          <div class="view-counter">
+            <p>Total Views</p>
+            <i class="fab fa-youtube icon-youtube"></i>
+          </div>
+          <div class="view-data">
+            <p class="count">1407</p>
+            <span class="decrease"><i class="fas fa-sort-up icon"></i>12%</span>
+          </div>
+        </div>
+      </section>
 
-  Profile Views
-  52k
-  1375%
+    </main>
 
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
